@@ -28,8 +28,6 @@ cb(user);
 
 getRepos(userName: string, cb: (repos: Repo[]) => any) {
 
-
-
     request.get('https://api.github.com/users/'+ userName + '/repos',options, (error: any, response: any,body: any) => {
 
        
